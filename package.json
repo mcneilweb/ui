@@ -9,6 +9,7 @@
   ],
   "type": "module",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -24,8 +25,12 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
     "vite-plugin-dts": "^3.7.2"
+  },
+  "dependencies": {
+    "lit": "^3.1.2"
   }
 }
