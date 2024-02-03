@@ -1,0 +1,31 @@
+{
+  "name": "@mcneilweb/ui",
+  "version": "0.0.1",
+  "description": "Web components for the people",
+  "author": "Jonathan McNeil <jonathan@mcneilweb.com>",
+  "license": "MIT",
+  "keywords": [
+    "components"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "watch": "vite build --watch",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2"
+  }
+}
