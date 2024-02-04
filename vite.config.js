@@ -19,12 +19,7 @@ export default defineConfig({
       fileName: 'index'
     },
     rollupOptions: {
-      external: ['lit'],
-      output: {
-        globals: {
-          lit: 'Lit'
-        }
-      }
+      external: '^lit/',
     }
   }
 });
